@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+
+body {
+  background-color: #fa9191;
+  background-size: auto;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-size: 12pt;
+}
+
+.contact-us {
+  background: #fcecdd;
+  padding: 50px 100px;
+  border-top: 10px solid #f05945;
+}
+
+label, input, textarea {
+  display: block;
+  width: 100%;
+  font-size: 12pt;
+  line-height: 24pt;
+  font-family: "Spartan";
+}
+
+input {
+  margin-bottom: 24pt;
+  margin-top: 12pt;
+}
+
+input, textarea {
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background: #f8f4e5;
+  padding-left: 5px;
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+
+.input100 {
+    font-size: 15px;
+    color: #c06014;
+    line-height: 1.5;
+    width: 100%;
+    padding: 5px 5px;
+}
+button {
+  display: block;
+  float: right;
+  line-height: 24pt;
+  padding: 0 20px;
+  border: none;
+  background: #f45702;
+  color: white;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  border-bottom: 2px solid transparent;
+  outline: none;
+}
+button:hover {
+  background: inherit;
+  color: #f45702;
+  border-bottom: 2px solid #f45702;
+}
+
+/* ::selection {
+  background: #ffc7b8;
+} */
+.wrap-input100 {
+     width: 100%;
+    /* position: relative; */
+    border-bottom: 1px red;
+    margin-bottom: 6px;
+}
+
+.label-input100 {
+    font-family: Poppins-Regular;
+    font-size: 20px;
+    color: #fb3640;
+    line-height: 3 0;
+    top: 14px;
+    left: -105px;
+    width: 80px;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  border: 1px solid #6bd4b1;
+  -webkit-text-fill-color: #2A293E;
+  /* -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset; */
+  transition: background-color 5000s ease-in-out 0s;
+}
+    </style>
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+    {% if my_target %}
+	        <h1 style = "color: white;"> <i> {{my_target}}  </i> </h1>
+    {% endif %}
+    <div class="contact-us">
+        <h1 style="text-align: center; color:red">Enter Values</h1>
+        <form style="font-family: 'Merriweather', serif;"class="contact100-form validate-form" Method ='POST' action = '/'>
+            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                <span class="label-input100">Age:</span>
+                <input class="input100" name="age" required="" type="text" name="age" placeholder="Enter age in years" />
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                <span class="label-input100">Sex:</span>
+                <input class="input100" type="text" name="sex" placeholder="Enter (1 = male; 0 = female)">
+            </div>  
+            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                <span class="label-input100">Chest Pain Value:</span>
+                <input class="input100" type="text" name="cp" placeholder="Enter the cp">
+
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                <span class="label-input100">Cholesterol value:</span>
+                <input class="input100" type="text" name="chol" placeholder="Enter the chol">
+
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                <span class="label-input100">Fasting blood sugar > 120 mg/dl:</span>
+                <input class="input100" type="text" name="fbs" placeholder="(1 = true; 0 = false)">
+
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                <span class="label-input100">Maximum heart rate achieved:</span>
+                <input class="input100" type="text" name="thalach" placeholder="Enter thalach value">
+
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                <span class="label-input100">Exercise induced angina:</span>
+                <input class="input100" type="text" name="exang" placeholder="(1 = yes; 0 = no)">
+
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                <span class="label-input100">Oldpeak value:</span>
+                <input class="input100" type="text" name="oldpeak" placeholder="Enter oldpeak value">
+
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                <span class="label-input100">Enter Slope Value:</span>
+                <input class="input100" type="text" name="slope" placeholder="(1 = upsloping; 2 = flat; 3 = downsloping)">
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Name is required">
+                <span class="label-input100">Enter CA value:</span>
+                <input class="input100" type="text" name="ca" placeholder="number of major vessels (0-3) colored by flourosopy">
+
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                <span class="label-input100">THAL value:</span>
+                <input class="input100" type="text" name="thal" placeholder="(0 = normal; 1 = fixed defect; 2 = reversable defect)">
+            </div>
+            <div class="container-contact100-form-btn">
+                <button class="contact100-form-btn">
+                    <span>
+                        Submit
+                        <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+        </form>
+      </div>
+</body>
+</html>

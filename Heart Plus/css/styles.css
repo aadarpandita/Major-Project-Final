@@ -1,0 +1,166 @@
+/* body {
+
+} */
+#title {
+  background-color: #ff4c68;
+  color: white;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+.container-fluid{
+  padding: 1% 15%;
+}
+.navbar {
+  padding: 0 0 5%;
+}
+.navbar-brand{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.nav-item{
+  font-size: 1.1rem;
+  padding-left: 10%;
+}
+
+.downloadbutton{
+  margin: 5% 3% 5% 0;
+}
+.titlephoto{
+  width:60%;
+  transform: rotate(20deg);
+  position: relative;
+  left:20%;
+}
+#features{
+  padding-top: 120px;
+  padding-bottom: 60px;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.emoji{
+  color: #fa9191;
+  margin-bottom: 7%;
+}
+.emoji:hover{
+  color: #ff4c68;
+}
+.featurebox{
+  text-align: center;
+}
+h3{
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.feat{
+  width: 70%;
+  margin: auto;
+  color: grey;
+}
+#testimonials{
+  background-color: #fa9191;
+  text-align: center;
+  color: #fff;
+  line-height: 2rem;
+}
+.testimonial{
+  padding:7% 15%;
+}
+h2 {
+  font-family: 'Montserrat';
+  line-height: 1.5;
+  font-size: 3rem;
+  margin-bottom: 5%;
+}
+.dog{
+  width: 10%;
+  border-radius: 100%;
+  margin-right: 2%;
+}
+#press{
+  background-color: #fa9191;
+  padding:7% 13%;
+  padding-top: 0;
+  text-align: center;
+}
+
+
+#cta {
+  background-color: #ff4c68;
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.cta-h3 {
+  font-family:'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 5%;
+}
+
+#footer {
+  text-align: center;
+  padding: 5% 15%;
+}
+.img {
+  margin: 2%;
+}
+.copyright{
+  color: grey;
+}
+.price-h2 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.para {
+  color: grey;
+}
+
+
+#home-remedies{
+  text-align: center;
+}
+
+
+.card{
+  text-align: center;
+}
+.card-text{
+  font-size: 1.2rem;
+}
+.modal-backdrop {
+  background-color: #e7dfd5;
+}
+.modal-content{
+  background-color: #e7dfd5;
+}
+.modal-title{
+  font-size: 2.5rem;
+  color: #01a9b4;
+}
+.modal-body{
+  color: #888888;
+}
+.modal-foot{
+  color: #888888;
+  font-size: 0.9rem;
+}
+.yoga-links{
+  font-size: 1.5rem;
+  color: #222831;
+}
+.yoga-links:hover{
+  color: #7bb4c3;
+}
+
+.abt-heading{
+  text-align: center;
+  font-size: 4rem;
+  color: #ff4c68;
+  padding: 5% 5%;
+}
